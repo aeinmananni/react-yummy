@@ -1,4 +1,4 @@
-import { Header } from './components';
+import { Header, TimerChallenge } from './components';
 import challengesImage from '../images/challenges-image.webp';
 export default function Challenges() {
   return (
@@ -9,9 +9,10 @@ export default function Challenges() {
         backgroundPosition: 'center',
         backgroundSize: 'cover'
       }}
-      className="flex flex-col min-h-screen w-full rounded-lg items-center"
+      className="flex flex-col min-h-screen w-full rounded-lg items-center overflow-hidden gap-5"
     >
       <Header />
+      <TimerChallenge />
     </div>
   );
 }

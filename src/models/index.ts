@@ -27,3 +27,10 @@ export type LoginType = {
   email: string;
   password: string;
 };
+
+
+export type ChallengrCartType = {
+  id: number;
+  title: string;
+  targetTime: number;
+};

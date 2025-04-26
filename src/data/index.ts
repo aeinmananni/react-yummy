@@ -1,4 +1,4 @@
-import { TabsType } from '../models';
+import { TabsType, ChallengrCartType } from '../models';
 
 export const tabs: TabsType[] = [
   {
@@ -168,4 +168,11 @@ export const WINING_COMBINATIONS: { row: number; col: number }[][] = [
     { row: 1, col: 1 },
     { row: 2, col: 0 }
   ]
+];
+
+export const CHALLENGE_CART_ITEMS: ChallengrCartType[] = [
+  { id: 1, title: 'EASY', targetTime: 1 },
+  { id: 2, title: 'NOT EASY', targetTime: 5 },
+  { id: 3, title: 'GETTING TOUGH', targetTime: 10 },
+  { id: 4, title: 'PROS ONLY', targetTime: 15 }
 ];
