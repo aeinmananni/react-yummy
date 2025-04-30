@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
-import { InvestmentCalculateType } from '../models';
+import { InvestmentCalculateType, NewTodoType } from '../models';
 type Player = 'X' | 'O';
 
 type GameTurnsType = {
@@ -20,6 +20,8 @@ type ContextType = {
   investmentState: InvestmentCalculateType;
   setInvestmentState: Dispatch<SetStateAction<InvestmentCalculateType>>;
   handelChangeInput: (inputIdentyfier: keyof InvestmentCalculateType, newValue: number) => void;
+  projectsInfo: NewTodoType | null;
+  setProjectsInfo: Dispatch<SetStateAction<NewTodoType | null>>;
 };
 
 const symbolPlayerContext = createContext<ContextType | null>(null);
@@ -43,6 +45,8 @@ export const ProviderContext = ({ children }: Props) => {
     Duration: 10
   });
 
+  const [projectsInfo, setProjectsInfo] = useState<NewTodoType | null>(null);
+
   const driveActivePlayer = (gameTurns: GameTurnsType[]) => {
     let currentPlayer: Player = 'X';
 
@@ -54,6 +58,7 @@ export const ProviderContext = ({ children }: Props) => {
   };
 
   const activePlayer = driveActivePlayer(gameTurns);
+
   const handelSelectSqure = (rowIndex: number, colIndex: number) => {
     setGameTurns((prev) => {
       const currentPlayer: Player = driveActivePlayer(gameTurns);
@@ -87,7 +92,9 @@ export const ProviderContext = ({ children }: Props) => {
         playersName,
         investmentState,
         setInvestmentState,
-        handelChangeInput
+        handelChangeInput,
+        projectsInfo,
+        setProjectsInfo
       }}
     >
       {children}

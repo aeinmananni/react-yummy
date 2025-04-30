@@ -34,3 +34,16 @@ export type ChallengrCartType = {
   title: string;
   targetTime: number;
 };
+
+export type NewTodoType = {
+  id?: number;
+  title: string;
+  date: string;
+  description: string;
+};
+
+export type ProjectsType = {
+  selectedProjectId: number | undefined | null;
+  projects: NewTodoType[];
+};
+

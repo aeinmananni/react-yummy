@@ -1,4 +1,13 @@
-import { Header, Box, Example, TicTacToe, Investmentcalculator, Login, Challenges } from './components';
+import {
+  Header,
+  Box,
+  Example,
+  TicTacToe,
+  Investmentcalculator,
+  Login,
+  Challenges,
+  Projects
+} from './components';
 
 export default function ReactEssenTials() {
   return (
@@ -10,6 +19,7 @@ export default function ReactEssenTials() {
       <Investmentcalculator />
       <Login />
       <Challenges />
+      <Projects />
     </div>
   );
 }
