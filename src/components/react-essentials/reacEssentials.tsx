@@ -6,7 +6,8 @@ import {
   Investmentcalculator,
   Login,
   Challenges,
-  Projects
+  Projects,
+  Shop
 } from './components';
 
 export default function ReactEssenTials() {
@@ -20,6 +21,7 @@ export default function ReactEssenTials() {
       <Login />
       <Challenges />
       <Projects />
+      <Shop />
     </div>
   );
 }

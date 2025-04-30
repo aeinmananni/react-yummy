@@ -32,4 +32,10 @@
   .InputStyles {
     @apply bg-transparent p-2 border rounded-md outline-none text-white;
   }
+  .keremColor{
+    color: #FFFDD0;
+  }
+  .kremBackground{
+    background-color: #FFFDD0;
+  }
 }

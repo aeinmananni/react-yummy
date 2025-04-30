@@ -1,6 +1,6 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
-import { InvestmentCalculateType, NewTodoType } from '../models';
+import { InvestmentCalculateType, NewTodoType, ProductPurPurchaseType } from '../models';
 type Player = 'X' | 'O';
 
 type GameTurnsType = {
@@ -22,6 +22,10 @@ type ContextType = {
   handelChangeInput: (inputIdentyfier: keyof InvestmentCalculateType, newValue: number) => void;
   projectsInfo: NewTodoType | null;
   setProjectsInfo: Dispatch<SetStateAction<NewTodoType | null>>;
+  productPurchase: ProductPurPurchaseType[];
+  setProductPurchase: Dispatch<SetStateAction<ProductPurPurchaseType[]>>;
+  showModal: boolean;
+  setShowModal: Dispatch<SetStateAction<boolean>>;
 };
 
 const symbolPlayerContext = createContext<ContextType | null>(null);
@@ -46,7 +50,8 @@ export const ProviderContext = ({ children }: Props) => {
   });
 
   const [projectsInfo, setProjectsInfo] = useState<NewTodoType | null>(null);
-
+  const [productPurchase, setProductPurchase] = useState<ProductPurPurchaseType[]>([]);
+  const [showModal, setShowModal] = useState<boolean>(false);
   const driveActivePlayer = (gameTurns: GameTurnsType[]) => {
     let currentPlayer: Player = 'X';
 
@@ -94,7 +99,11 @@ export const ProviderContext = ({ children }: Props) => {
         setInvestmentState,
         handelChangeInput,
         projectsInfo,
-        setProjectsInfo
+        setProjectsInfo,
+        productPurchase,
+        setProductPurchase,
+        showModal,
+        setShowModal
       }}
     >
       {children}

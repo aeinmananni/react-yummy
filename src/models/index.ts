@@ -47,3 +47,16 @@ export type ProjectsType = {
   projects: NewTodoType[];
 };
 
+
+
+export type ShoppingType = {
+  id: number;
+  title: string;
+  exp: string;
+  image: string;
+  price: number;
+};
+
+export type ProductPurPurchaseType = Pick<ShoppingType, 'id' | 'image' | 'title' | 'price'> & {
+  count: number;
+};
