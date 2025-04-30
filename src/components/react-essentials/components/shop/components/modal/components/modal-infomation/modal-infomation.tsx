@@ -30,7 +30,9 @@ export default function ModalInfoMation({ children }: ModalInfoMationProps) {
           </Button>
           <Button
             onClick={() => setProductPurchase([])}
-            className="bg-orange-900 rounded-md text-white px-3 py-1"
+            className={` ${
+              productPurchase.length > 0 ? 'bg-orange-900' : 'bg-orange-300'
+            }  rounded-md text-white px-3 py-1`}
           >
             Clear All Products
           </Button>
