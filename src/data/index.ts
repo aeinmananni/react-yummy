@@ -1,9 +1,20 @@
-import { TabsType, ChallengrCartType, ShoppingType } from '../models';
+import { TabsType, ChallengrCartType, ShoppingType, PictureTypes } from '../models';
 import shot_women1 from '../components/react-essentials/components/images/shot-women7.jpg';
 import shot_women2 from '../components/react-essentials/components/images/shot-women2.jpg';
 import shot_women3 from '../components/react-essentials/components/images/shot-women3.jpg';
 import shot_women4 from '../components/react-essentials/components/images/shot-women4.jpg';
 import shot_women6 from '../components/react-essentials/components/images/shot-women6.jpg';
+import art1 from '../components/react-essentials/components/images/art1.jpg';
+import art2 from '../components/react-essentials/components/images/art2.jpg';
+import art3 from '../components/react-essentials/components/images/art3.jpg';
+import art4 from '../components/react-essentials/components/images/art4.jpg';
+import art5 from '../components/react-essentials/components/images/art5.jpg';
+import art6 from '../components/react-essentials/components/images/art6.jpg';
+import art7 from '../components/react-essentials/components/images/art7.jpg';
+import art8 from '../components/react-essentials/components/images/art8.jpg';
+import art9 from '../components/react-essentials/components/images/art9.jpg';
+import art10 from '../components/react-essentials/components/images/art10.jpg';
+
 export const tabs: TabsType[] = [
   {
     id: 1,
@@ -218,4 +229,17 @@ export const SHOPPING_LIST: ShoppingType[] = [
     image: shot_women6,
     price: 143000
   }
+];
+
+export const PLACES: PictureTypes[] = [
+  { id: 1, lat: 35.6892, lon: 51.389, image: art1 },
+  { id: 2, lat: 32.4279, lon: 53.688, image: art2 },
+  { id: 3, lat: 29.59, lon: 52.5836, image: art3 },
+  { id: 4, lat: 36.2605, lon: 59.6168, image: art4 },
+  { id: 5, lat: 38.07, lon: 46.2919, image: art5 },
+  { id: 6, lat: 37.2808, lon: 49.5832, image: art6 },
+  { id: 7, lat: 34.6401, lon: 50.8764, image: art7 },
+  { id: 8, lat: 30.2839, lon: 57.0834, image: art8 },
+  { id: 9, lat: 35.3149, lon: 46.9988, image: art9 },
+  { id: 10, lat: 37.5528, lon: 45.076, image: art10 }
 ];

@@ -1,6 +1,7 @@
 /* eslint-disable react-refresh/only-export-components */
 import { createContext, Dispatch, SetStateAction, useContext, useState } from 'react';
 import { InvestmentCalculateType, NewTodoType, ProductPurPurchaseType } from '../models';
+import { WithCoordinates } from '../components/react-essentials/components/picture/utils/location';
 type Player = 'X' | 'O';
 
 type GameTurnsType = {
@@ -26,6 +27,10 @@ type ContextType = {
   setProductPurchase: Dispatch<SetStateAction<ProductPurPurchaseType[]>>;
   showModal: boolean;
   setShowModal: Dispatch<SetStateAction<boolean>>;
+  selectedPicture: WithCoordinates[];
+  setSelectedPicture: Dispatch<SetStateAction<WithCoordinates[]>>;
+  pictureModal: { id: number } | null;
+  setPictureModal: Dispatch<SetStateAction<{ id: number } | null>>;
 };
 
 const symbolPlayerContext = createContext<ContextType | null>(null);
@@ -52,6 +57,8 @@ export const ProviderContext = ({ children }: Props) => {
   const [projectsInfo, setProjectsInfo] = useState<NewTodoType | null>(null);
   const [productPurchase, setProductPurchase] = useState<ProductPurPurchaseType[]>([]);
   const [showModal, setShowModal] = useState<boolean>(false);
+  const [selectedPicture, setSelectedPicture] = useState<WithCoordinates[]>([]);
+  const [pictureModal, setPictureModal] = useState<{ id: number } | null>(null);
   const driveActivePlayer = (gameTurns: GameTurnsType[]) => {
     let currentPlayer: Player = 'X';
 
@@ -103,7 +110,11 @@ export const ProviderContext = ({ children }: Props) => {
         productPurchase,
         setProductPurchase,
         showModal,
-        setShowModal
+        setShowModal,
+        selectedPicture,
+        setSelectedPicture,
+        pictureModal,
+        setPictureModal
       }}
     >
       {children}

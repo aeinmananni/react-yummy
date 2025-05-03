@@ -7,7 +7,8 @@ import {
   Login,
   Challenges,
   Projects,
-  Shop
+  Shop,
+  Picture
 } from './components';
 
 export default function ReactEssenTials() {
@@ -22,6 +23,7 @@ export default function ReactEssenTials() {
       <Challenges />
       <Projects />
       <Shop />
+      <Picture />
     </div>
   );
 }

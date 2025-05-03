@@ -7,3 +7,4 @@ export * from './login';
 export * from './challenges';
 export * from './projects';
 export * from './shop';
+export * from './picture';

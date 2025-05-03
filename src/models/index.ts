@@ -60,3 +60,10 @@ export type ShoppingType = {
 export type ProductPurPurchaseType = Pick<ShoppingType, 'id' | 'image' | 'title' | 'price'> & {
   count: number;
 };
+
+export type PictureTypes = {
+  id: number;
+  lat: number;
+  lon: number;
+  image: string;
+};
