@@ -67,3 +67,10 @@ export type PictureTypes = {
   lon: number;
   image: string;
 };
+
+
+export type QuizType = {
+  id: string;
+  text: string;
+  answers: string[];
+};

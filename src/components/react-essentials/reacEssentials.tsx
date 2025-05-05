@@ -8,7 +8,8 @@ import {
   Challenges,
   Projects,
   Shop,
-  Picture
+  Picture,
+  Quiz
 } from './components';
 
 export default function ReactEssenTials() {
@@ -24,6 +25,7 @@ export default function ReactEssenTials() {
       <Projects />
       <Shop />
       <Picture />
+      <Quiz />
     </div>
   );
 }

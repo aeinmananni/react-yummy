@@ -1,4 +1,4 @@
-import { TabsType, ChallengrCartType, ShoppingType, PictureTypes } from '../models';
+import { TabsType, ChallengrCartType, ShoppingType, PictureTypes, QuizType } from '../models';
 import shot_women1 from '../components/react-essentials/components/images/shot-women7.jpg';
 import shot_women2 from '../components/react-essentials/components/images/shot-women2.jpg';
 import shot_women3 from '../components/react-essentials/components/images/shot-women3.jpg';
@@ -242,4 +242,57 @@ export const PLACES: PictureTypes[] = [
   { id: 8, lat: 30.2839, lon: 57.0834, image: art8 },
   { id: 9, lat: 35.3149, lon: 46.9988, image: art9 },
   { id: 10, lat: 37.5528, lon: 45.076, image: art10 }
+];
+
+export const QUIZ_ITEMS: QuizType[] = [
+  {
+    id: '1',
+    text: 'Which animal is the fastest?',
+    answers: ['Cheetah', 'Rabbit', 'Horse', 'Dog']
+  },
+  {
+    id: '2',
+    text: 'What is the capital of Iran?',
+    answers: ['Tehran', 'Isfahan', 'Tabriz', 'Mashhad']
+  },
+  {
+    id: '3',
+    text: 'What is the sum of 8 and 5?',
+    answers: ['13', '12', '14', '10']
+  },
+  {
+    id: '4',
+    text: 'Which planet is closest to the sun?',
+    answers: ['Mercury', 'Venus', 'Earth', 'Mars']
+  },
+  {
+    id: '5',
+    text: 'Which one is not a primary color?',
+    answers: ['Green', 'Blue', 'Red', 'Yellow']
+  },
+  {
+    id: '6',
+    text: 'Which animal lives in the ocean?',
+    answers: ['Whale', 'Lion', 'Tiger', 'Cow']
+  },
+  {
+    id: '7',
+    text: 'Which number is even?',
+    answers: ['4', '7', '9', '3']
+  },
+  {
+    id: '8',
+    text: 'Which country is in Europe?',
+    answers: ['France', 'Japan', 'China', 'Egypt']
+  },
+  {
+    id: '9',
+    text: 'Which one is not a season?',
+    answers: ['Color', 'Spring', 'Summer', 'Fall']
+  },
+  {
+    id: '10',
+    text: 'Which one is a fruit?',
+    answers: ['Apple', 'Potato', 'Cabbage', 'Carrot']
+  }
 ];

@@ -8,3 +8,4 @@ export * from './challenges';
 export * from './projects';
 export * from './shop';
 export * from './picture';
+export * from './quiz';
