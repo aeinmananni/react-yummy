@@ -19,11 +19,11 @@ export default function Header() {
       </div>
       <Button
         onClick={() => setShowModal(true)}
-        className="p-1 rounded-md kremBackground flex items-center gap-2"
+        className="p-1 rounded-md kremBackground flex items-center gap-2 "
       >
         <Image src={trollyIcon} alt="Trolly" width={30} height={30} />
         <span className="text-orange-950 text-sm">Number of purchase cards</span>
-        <span>({Reduce()})</span>
+        <span className="text-orange-900">({Reduce()})</span>
       </Button>
     </div>
   );

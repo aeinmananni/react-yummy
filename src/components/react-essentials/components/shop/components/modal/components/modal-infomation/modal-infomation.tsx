@@ -14,13 +14,13 @@ export default function ModalInfoMation({ children }: ModalInfoMationProps) {
 
   return (
     <>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-3 text-orange-900">
         <span className="text-2xl font-bold">YOUR CART</span>
         {productPurchase.length <= 0 && <span>No Item in Cart!</span>}
       </div>
       <div className=" w-full gap-3 grid grid-cols-1 h-max">{children}</div>
       <div className="flex flex-col items-end w-full gap-2">
-        <span>Cart Total : ${hadelReduse()}</span>
+        <span className="text-orange-900">Cart Total : ${hadelReduse()}</span>
         <div className="flex items-center gap-2">
           <Button
             onClick={() => setShowModal(false)}

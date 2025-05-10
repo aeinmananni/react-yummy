@@ -14,7 +14,7 @@ export default function Cart({ image, title, exp, onClick, price }: CartProps) {
   return (
     <div className="h-max  flex flex-col rounded-md gap-3 kremBackground">
       <Image src={image} alt="shot1" width={400} height={400} className="object-cover" />
-      <div className="flex flex-col gap-4 p-2">
+      <div className="flex flex-col gap-4 p-2 text-orange-900">
         <span className="font-bold text-xl">{title}</span>
         <span>{exp}</span>
         <div className="flex justify-between items-center">

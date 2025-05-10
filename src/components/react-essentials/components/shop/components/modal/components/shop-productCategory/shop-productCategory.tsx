@@ -23,7 +23,7 @@ export default function ShopProductCategory({
     <div className="flex justify-evenly">
       <div className="flex items-center gap-4">
         <Image src={image} alt="aa" width={30} height={30} className=" rounded-sm" />
-        <span>{title}</span>
+        <span className="text-orange-900">{title}</span>
       </div>
       <div className="flex items-center gap-5">
         <Button
@@ -35,7 +35,7 @@ export default function ShopProductCategory({
         >
           +
         </Button>
-        <span className="text-lg">{count}</span>
+        <span className="text-lg text-orange-900">{count}</span>
 
         <Button
           onClick={(e) => {

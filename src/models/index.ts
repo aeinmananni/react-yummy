@@ -73,4 +73,5 @@ export type QuizType = {
   id: string;
   text: string;
   answers: string[];
+  correctAnswer: string;
 };

@@ -248,51 +248,61 @@ export const QUIZ_ITEMS: QuizType[] = [
   {
     id: '1',
     text: 'Which animal is the fastest?',
-    answers: ['Cheetah', 'Rabbit', 'Horse', 'Dog']
+    answers: ['Cheetah', 'Rabbit', 'Horse', 'Dog'],
+    correctAnswer: 'Cheetah'
   },
   {
     id: '2',
     text: 'What is the capital of Iran?',
-    answers: ['Tehran', 'Isfahan', 'Tabriz', 'Mashhad']
+    answers: ['Tehran', 'Isfahan', 'Tabriz', 'Mashhad'],
+    correctAnswer: 'Tehran'
   },
   {
     id: '3',
     text: 'What is the sum of 8 and 5?',
-    answers: ['13', '12', '14', '10']
+    answers: ['13', '12', '14', '10'],
+    correctAnswer: '13'
   },
   {
     id: '4',
     text: 'Which planet is closest to the sun?',
-    answers: ['Mercury', 'Venus', 'Earth', 'Mars']
+    answers: ['Mercury', 'Venus', 'Earth', 'Mars'],
+    correctAnswer: 'Mercury'
   },
   {
     id: '5',
     text: 'Which one is not a primary color?',
-    answers: ['Green', 'Blue', 'Red', 'Yellow']
+    answers: ['Green', 'Blue', 'Red', 'Yellow'],
+    correctAnswer: 'Green'
   },
   {
     id: '6',
     text: 'Which animal lives in the ocean?',
-    answers: ['Whale', 'Lion', 'Tiger', 'Cow']
+    answers: ['Whale', 'Lion', 'Tiger', 'Cow'],
+    correctAnswer: 'Whale'
   },
   {
     id: '7',
     text: 'Which number is even?',
-    answers: ['4', '7', '9', '3']
+    answers: ['4', '7', '9', '3'],
+    correctAnswer: '4'
   },
   {
     id: '8',
     text: 'Which country is in Europe?',
-    answers: ['France', 'Japan', 'China', 'Egypt']
+    answers: ['France', 'Japan', 'China', 'Egypt'],
+    correctAnswer: 'France'
   },
   {
     id: '9',
     text: 'Which one is not a season?',
-    answers: ['Color', 'Spring', 'Summer', 'Fall']
+    answers: ['Color', 'Spring', 'Summer', 'Fall'],
+    correctAnswer: 'Color'
   },
   {
     id: '10',
     text: 'Which one is a fruit?',
-    answers: ['Apple', 'Potato', 'Cabbage', 'Carrot']
+    answers: ['Apple', 'Potato', 'Cabbage', 'Carrot'],
+    correctAnswer: 'Apple'
   }
 ];
