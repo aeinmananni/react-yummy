@@ -75,3 +75,46 @@ export type QuizType = {
   answers: string[];
   correctAnswer: string;
 };
+
+
+export type ExpenseFormTypes = {
+  id?: number;
+  date: string;
+  title: string;
+  amount: number;
+};
+
+export type MonthsType = {
+  id: number;
+  name: string;
+  incomes: { id: number; income: number };
+};
+
+export type IncomeData = {
+  id: number;
+  income: number;
+};
+
+export type MonthIncome = {
+  id: number;
+  name: string;
+  incomes: IncomeData;
+};
+
+export type YearlyIncome = {
+  year: number;
+  months: {
+    id: number;
+    name: string;
+    incomes: {
+      id: number;
+      income: number;
+    };
+  }[];
+};
+
+export type DropDownType = {
+  show: boolean;
+  year: number;
+};
+

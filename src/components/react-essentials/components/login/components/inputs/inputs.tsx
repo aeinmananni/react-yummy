@@ -15,7 +15,7 @@ export default function Inputs() {
     alert(JSON.stringify(data, null, 2));
   };
   return (
-    <form className="flex flex-col gap-4" onSubmit={handleSubmit(onSubmite)}>
+    <form className="flex flex-col gap-6" onSubmit={handleSubmit(onSubmite)}>
       <Input
         {...register('email', {
           required: 'Email is Required !',

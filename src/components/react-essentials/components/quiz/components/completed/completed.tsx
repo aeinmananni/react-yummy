@@ -10,7 +10,7 @@ type CompletedProps = {
 
 export default function Completed({ onClick, correctCount, total }: CompletedProps) {
   return (
-    <div className="w-1/2  flex flex-col gap-5 items-center bg-indigo-400 animate-fadeInUp p-3 rounded-md ">
+    <div className="w-1/2  flex flex-col gap-5 items-center bg-indigo-400 animate-fadeInUp p-3 rounded-md absolute ">
       <Image src={cupWorld} width={100} height={100} alt="World Cup" />
       <span className="text-yellow-400 font-bold text-2xl">QUIZE COMPLETED!</span>
 
